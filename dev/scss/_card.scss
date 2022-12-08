@@ -1,0 +1,124 @@
+.cards {
+    display: flex;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+                
+    .card {
+        width: 447px;
+        height: 590px;
+        border-radius: 30px;
+        background: $gray;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .content-wrap {
+            display: flex;
+            width: 387px;
+            height: 530px;
+            margin: 0;
+            position: relative;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            
+            .label {
+                width: 118px;
+                background: $dark-blue;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+        
+                a {
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 27px;
+                    color: $persimonum;
+                    margin: 0;
+                    text-decoration: none;
+                    padding: 5px 20px;
+                    
+                    
+                    &:hover {
+                        color: $dark-blue;
+                    }
+                }
+        
+                &__theme--ocean {
+                    background-color: $light-blue;
+                    
+                    &:hover {
+                        text-decoration: none;
+                        background: $orange;
+                    }
+                }
+            }
+
+            .product {
+                font-family: 'Roboto Regular', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 35px;
+                letter-spacing: 0.36px;
+                color: $dark-blue;
+                padding: 0;
+                border-bottom: 1px solid $silver;
+                
+                a {
+                    text-decoration: none;
+                    color: $orange;
+                    
+                    &:hover {
+                        text-decoration: none;
+                        color: $dark-blue;
+                    }
+                }
+                
+                &__theme--ocean {
+                    border-bottom: 1px solid $orange;
+                }
+            }
+
+            .price-wrap {
+                border-top: 1px solid $gray;
+                display: flex;
+                align-items: center;
+                padding: 10px 0 0 0;
+                background: $gray;
+                
+                .old-price {
+                    width: 30%;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 32px;
+                    letter-spacing: 0.36px;
+                    text-decoration-line: line-through;
+                    color: #B8B8B8;
+                }
+                
+                .new-price {
+                    width: 45%;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0.36px;
+                    color: $dark-blue;
+                }
+                
+                .stars {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
